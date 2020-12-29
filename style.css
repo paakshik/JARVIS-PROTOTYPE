@@ -1,0 +1,237 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    
+  }
+  .talker{
+    position: absolute;
+   top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ background-color: black;
+ color: black;
+ font-style: italic;
+ color: white;
+ }
+  canvas {
+    display: block;
+  }
+  canvas1 {
+display: none;
+
+  }
+  *{
+  box-sizing: border-box;
+  
+  }
+  
+  .container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%,-50%);
+  }
+ 
+  .circle{
+  border-radius: 50%;
+  background: black;
+  top: 100%;
+  }
+  .outermost{
+    width: 255px;
+    height: 255px;
+    border:solid 10px rgba(0, 0, 0, 0);
+    border-bottom: solid 10px blue;
+    border-left: solid 10px blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: spin 5s linear  infinite ; 
+  }
+  .outer{
+    width: 250px;
+  height: 250px;
+  position: absolute;
+  border:solid 5px black;
+  top: 50%;
+  left: 50%;
+    transform: translate(-50%,-50%);
+    animation: spin 5s linear  infinite ; 
+  }
+  .middle{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border:solid 12px black;
+    border-bottom: solid 12px blue;
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)rotate(45deg);
+  animation: spin2 3.5s linear  infinite  reverse ; 
+  
+  }
+  .middle2{
+    width: 215px;
+    height: 215px;
+    position: absolute;
+    border:solid 6px rgba(0, 0, 0, 0);
+    border-bottom: solid 6px blue;
+    border-bottom: solid 6px blue;
+    border-right: solid 6px blue;
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: spin 3.5s linear  infinite reverse ; 
+  }
+  .middle3{
+    width: 205px;
+    height: 205px;
+    position: absolute;
+    border:solid 30px rgba(0, 0, 0, 0);
+    border-bottom: solid 30px blue;
+    border-bottom: solid 30px blue;
+    border-right: solid 30px blue;
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: spin 3.5s linear  infinite reverse ; 
+  }
+  .inner{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    border:solid 5px blue;
+    border-bottom: solid 5px blue;
+    border-left: solid 5px blue;
+    border-right: solid 5px blue;
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: spin2 2s linear  infinite ;   
+  }
+  .innermost3{
+    width: 35px;
+    height: 35px;
+    background: blue;
+    position: absolute;
+    border:solid 5px blue;
+    border-bottom: solid 5px blue;
+    border-left: solid 5px blue;
+    border-right: solid 5px blue;
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  }
+  .innermost2{
+    width: 200px;
+    height: 200px;
+   
+    position: absolute;
+    border:solid 13px blue;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  } 
+  .innermost{ 
+    width: 205px;
+    height: 205px;
+    border-top: solid 13px black;
+   
+    border:solid 13px blue;
+    border-bottom: solid 13px black;
+    top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: spin    1s linear  infinite  reverse ; 
+  }
+  .innermost-1{
+    width: 200px;
+    height: 200px;
+   
+    position: absolute;
+    border:solid 13px blue;
+    top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  } 
+  .innermost-2{ 
+    width: 205px;
+    height: 205px;
+    border-top: solid 13px black;
+   
+    border:solid 13px blue;
+    border-bottom: solid 13px black;
+    top: 10%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  animation: spin    1s linear  infinite  reverse ; 
+  }
+  .innermost-3{
+    width: 200px;
+    height: 200px;
+   
+    position: absolute;
+    border:solid 13px blue;
+    top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  } 
+  .innermost-4{ 
+    width: 205px;
+    height: 205px;
+    border-top: solid 13px black;
+   
+    border:solid 13px blue;
+    border-bottom: solid 13px black;
+    top: 10%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  animation: spin    1s linear  infinite  reverse ; 
+  }
+  .innermost-5{
+    width: 200px;
+    height: 200px;
+   
+    position: absolute;
+    border:solid 13px blue;
+    top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  } 
+  .innermost-6{ 
+    width: 205px;
+    height: 205px;
+    border-top: solid 13px black;
+   
+    border:solid 13px blue;
+    border-bottom: solid 13px black;
+    top: 10%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  animation: spin    1s linear  infinite  reverse ; 
+  }
+  @keyframes spin{
+  0%{
+    transform: translate(-50%,-50%)rotate(0deg);
+  
+  }
+  100%{
+    transform: translate(-50%,-50%)rotate(350deg);
+  }
+  }
+  @keyframes spin2{
+    0%{
+      transform: translate(-50%,-50%)rotate(45deg);
+    
+    }
+    100%{
+      transform: translate(-50%,-50%)rotate(405deg);
+    }
+    }
+    
